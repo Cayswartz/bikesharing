@@ -1,39 +1,42 @@
-# stocks-analysis
+# Citibike Analysis
 
+[link to dashboard]([(https://public.tableau.com/app/profile/caylin.swartz/viz/CitibikesAnalysis_16550807830060/CitibikesAnalys is?publish=yes) "link to dashboard")
 
-# CitiBike Analysis
+# Citibike Analysis
 
 ## Overview of Project
 We are diving into the performance of Citibikes in New York during the summer to better understand the trends and habits around users of the bikes. We hope that by better understanding the trends in New York we will be able to make educated decision when we open another bike sharing operation in a new city. 
 
 ## Results
-In this assignment we were able to successfully refactor the code to run more efficiently. For 2017, the factoring successfully cut down the code run time to .140625 seconds and for 2018 I was able to cut it down to .109375 seconds.
+![ScreenShot](https://github.com/Cayswartz/bikesharing/blob/2316c0f682e1e91da93e564fab3b28cc8c88beeb/Images/Screen%20Shot%202022-06-12%20at%205.52.23%20PM.png)
 
-![ScreenShot](https://github.com/Cayswartz/stocks-analysis/blob/61b111cdb46a3efc75e22397809aaaf321a51151/Resources/VBA_Challenge_2017.png)
-![ScreenShot](https://github.com/Cayswartz/stocks-analysis/blob/61b111cdb46a3efc75e22397809aaaf321a51151/Resources/VBA_Challenge_2018.png)
+I wanted to utilize the above graphic so that the viewer could understand the true size of the sample that we were viewing and understand that the results are not just based of a small number of rides but rather over 2 million. 
 
-I was able to obtain this goal through a reduction of nested loops in the coding. First, instead of nesting the j loop within the i loop I was able to create two unique and individual loops. I created the i loop to initialize the ticker volume to 0 and then moved on to the j loop which ran through and identified the starting and ending prices. At the end of the j loop I placed an equation to increase the tickerIndex with the below code:
+![ScreenShot](https://github.com/Cayswartz/bikesharing/blob/main/Images/Screen%20Shot%202022-06-12%20at%205.51.49%20PM.png)
 
- If Cells(j + 1, 1).Value <> tickers(tickerIndex) Then
-tickerIndex = tickerIndex + 1
-End If
+This chart represent how long the average consumer is using the bike. You can tell from this chart that there is a huge peak around 10 minutes and then it begins to decrease from there. The bikes seems to be used for short commutes or sightseeing but nothing longer.    
 
-This code allowed for us to automate the increase of a ticker index without having to create an additional nested loop to move the tickerindex through the line. 
 
-In the third and last loop, we produced the stored information as an output in the document.
+![ScreenShot](https://github.com/Cayswartz/bikesharing/blob/main/Images/Screen%20Shot%202022-06-12%20at%205.51.55%20PM.png)
 
-Ultimately, this refactoring allowed us to create three individual loops without any nesting which created efficiencies across the code. 
-            
-            
+After taking a look at the last chart I wanted to dive in a bit deeper to understand how therse trend vary per gender. In this chart you can see that while men tend to ride bikes more, we see the length of bike rides for each gender peak around the same time. Female riders may take slightly shorter rides in general but only by a minute or so.
 
-## Summary 
+![ScreenShot](https://github.com/Cayswartz/bikesharing/blob/2316c0f682e1e91da93e564fab3b28cc8c88beeb/Images/Screen%20Shot%202022-06-12%20at%205.52.03%20PM.png)
 
-### Advantages & Disadvantages
-The benefits of refactoring VBA is that it helps simplify the code making it easier to understand, more maintainable and easier to scale as you continue to work with it. Additionally, refactoring requires that you go back through your code closer ensuring that there are no bugs and potential issues that could cause larger issues in the future.
+Taking a look at this chart we are able to see the popularity of trips not only broken down by day of the week but also by hour. Here you can see that during the week there are more ride in the early morning and later afternoon, likely communtes to work, while on the weekends we see more consistency throughout the day. 
 
-The primary disadvantage of refactoring code is that at times it can be time consuming. At times it can be frustrating because you are diving into code that is already written and working properly to clean it up but at times through this process you can end up breaking it and then having to find the correct way to repair it and create the same functionality again. 
+![ScreenShot](https://github.com/Cayswartz/bikesharing/blob/2316c0f682e1e91da93e564fab3b28cc8c88beeb/Images/Screen%20Shot%202022-06-12%20at%205.52.18%20PM.png)
 
-As a whole, refactoring can do create things for your code but make sure to keep in mind the time that it could take to rework it. 
+Here we are looking at overall days that we seeing men and women riding their bikes. We see men riding  bikes much more often than woman but tend to see the popular times line up for both genders.
 
-### How do these pros and cons apply to refactoring the original VBA script?
-These pros and cons pretty directly correlate with my experience with refactoring the VBA script. Being new to VBA, the refactoring definitely took awhile and some troubleshooting as I ran into different errors as I worked through it. This at times could be frustrating but once I got to the end result I was a decrease in the time it took to run my code so ultimately was worth it.
+![ScreenShot](https://github.com/Cayswartz/bikesharing/blob/2316c0f682e1e91da93e564fab3b28cc8c88beeb/Images/Screen%20Shot%202022-06-12%20at%205.52.14%20PM.png)
+
+Again, we took a deeper dive into the chart above by gender looking at the trends by times and day by gender. Similar to above, we see the same heavy traffic times for both gender however we see that men overall ride the bikes more than female. Similar to the overall analysis we see people communting to and from work on the weekdays and evenly throughout daylight hours on the weekends. 
+
+![ScreenShot](https://github.com/Cayswartz/bikesharing/blob/2316c0f682e1e91da93e564fab3b28cc8c88beeb/Images/Screen%20Shot%202022-06-12%20at%205.52.31%20PM.png)
+
+Here we are looking at the popular areas for people to pick up there bikes. There tends to be more activity towards the bottom which could show that it is either a touristy location or a big commercial area where people may be commuting ot and from. 
+
+
+## Results
+Overall, we see similar trends and patterns for both males and females when it comes to riding bikes though men tend to ride bike more than women. We see lots of bike usage during commuting hours on weekdays and during the weekend there is more even usage throughout the entire day (or at least daylight hours). I would like to continue to dig into this and create a visualization around the age of the different riders and what age we see people picking up bikes at. Additioanlly, I think it would be interesting to create another visualization of the medium income of the people who are riding bikes. It would be interesting to see if people are consider this part of the cost of living in a big city or is more often something used by people who may have disposible income. 
