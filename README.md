@@ -1,6 +1,6 @@
 # Citibike Analysis
 
-![link to dashboard]([(https://public.tableau.com/app/profile/caylin.swartz/viz/CitibikesAnalysis_16550807830060/CitibikesAnalys is?publish=yes) "link to dashboard")
+[link to dashboard]([(https://public.tableau.com/app/profile/caylin.swartz/viz/CitibikesAnalysis_16550807830060/CitibikesAnalys is?publish=yes))
 
 # Citibike Analysis
 
